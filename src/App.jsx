@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <InputBox setTodoText={() => setTodoText()} />
+      <InputBox setTodoText={setTodoText} />
       <div>
         {todoText.map((todo) => (
           <ToDo todoText={todo} setTodoText={setTodoText} />

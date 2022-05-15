@@ -6,7 +6,8 @@ const InputBox = ({ setTodoText }) => {
   function handleSubmit() {
     if (inputText !== "")
       setTodoText((todoText) => {
-        [...todoText, { text: inputText, id: uid(), checked: false }];
+        console.log(todoText);
+       return [...todoText, { text: inputText, id: uid(), checked: false }];
       });
     setInputText("");
   }
